@@ -15,6 +15,10 @@
 		ACA31411200360240084FF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA3140F200360240084FF43 /* LaunchScreen.storyboard */; };
 		ACA3141C200360240084FF43 /* AnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3141B200360240084FF43 /* AnimationTestTests.swift */; };
 		ACA31427200360240084FF43 /* AnimationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA31426200360240084FF43 /* AnimationTestUITests.swift */; };
+		ACE4BB142005E44B008739F7 /* V2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BB132005E44B008739F7 /* V2ViewController.swift */; };
+		ACE4BB182005EF63008739F7 /* table1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BB162005EF63008739F7 /* table1TableViewCell.swift */; };
+		ACE4BB192005EF63008739F7 /* table1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE4BB172005EF63008739F7 /* table1TableViewCell.xib */; };
+		ACE4BB1B2005F15E008739F7 /* table1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BB1A2005F15E008739F7 /* table1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		ACA31422200360240084FF43 /* AnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA31426200360240084FF43 /* AnimationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTestUITests.swift; sourceTree = "<group>"; };
 		ACA31428200360240084FF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE4BB132005E44B008739F7 /* V2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ViewController.swift; sourceTree = "<group>"; };
+		ACE4BB162005EF63008739F7 /* table1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table1TableViewCell.swift; sourceTree = "<group>"; };
+		ACE4BB172005EF63008739F7 /* table1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = table1TableViewCell.xib; sourceTree = "<group>"; };
+		ACE4BB1A2005F15E008739F7 /* table1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		ACA31402200360240084FF43 /* AnimationTest */ = {
 			isa = PBXGroup;
 			children = (
+				ACE4BB152005EF0A008739F7 /* table1Cell */,
 				ACA31403200360240084FF43 /* AppDelegate.swift */,
 				ACA31405200360240084FF43 /* ViewController.swift */,
 				ACA31407200360240084FF43 /* Main.storyboard */,
@@ -106,6 +115,8 @@
 				ACA3140F200360240084FF43 /* LaunchScreen.storyboard */,
 				ACA31412200360240084FF43 /* Info.plist */,
 				ACA3140A200360240084FF43 /* AnimationTest.xcdatamodeld */,
+				ACE4BB132005E44B008739F7 /* V2ViewController.swift */,
+				ACE4BB1A2005F15E008739F7 /* table1ViewController.swift */,
 			);
 			path = AnimationTest;
 			sourceTree = "<group>";
@@ -126,6 +137,15 @@
 				ACA31428200360240084FF43 /* Info.plist */,
 			);
 			path = AnimationTestUITests;
+			sourceTree = "<group>";
+		};
+		ACE4BB152005EF0A008739F7 /* table1Cell */ = {
+			isa = PBXGroup;
+			children = (
+				ACE4BB162005EF63008739F7 /* table1TableViewCell.swift */,
+				ACE4BB172005EF63008739F7 /* table1TableViewCell.xib */,
+			);
+			path = table1Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE4BB192005EF63008739F7 /* table1TableViewCell.xib in Resources */,
 				ACA31411200360240084FF43 /* LaunchScreen.storyboard in Resources */,
 				ACA3140E200360240084FF43 /* Assets.xcassets in Resources */,
 				ACA31409200360240084FF43 /* Main.storyboard in Resources */,
@@ -262,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACE4BB142005E44B008739F7 /* V2ViewController.swift in Sources */,
+				ACE4BB1B2005F15E008739F7 /* table1ViewController.swift in Sources */,
 				ACA31406200360240084FF43 /* ViewController.swift in Sources */,
 				ACA31404200360240084FF43 /* AppDelegate.swift in Sources */,
+				ACE4BB182005EF63008739F7 /* table1TableViewCell.swift in Sources */,
 				ACA3140C200360240084FF43 /* AnimationTest.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
