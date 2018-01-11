@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NpU-Ka-tdB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nfq-Ik-9ib">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -157,10 +157,10 @@
             </objects>
             <point key="canvasLocation" x="140" y="789.35532233883066"/>
         </scene>
-        <!--View Controller-->
+        <!--Slider View Controller-->
         <scene sceneID="81d-7m-yAz">
             <objects>
-                <viewController id="Nfq-Ik-9ib" sceneMemberID="viewController">
+                <viewController id="Nfq-Ik-9ib" customClass="SliderViewController" customModule="AnimationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kDH-Rk-Zcu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -187,6 +187,10 @@
                                                 </view>
                                             </collectionViewCell>
                                         </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Nfq-Ik-9ib" id="gSa-Qu-u78"/>
+                                            <outlet property="delegate" destination="Nfq-Ik-9ib" id="Txc-bN-8Sl"/>
+                                        </connections>
                                     </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -207,6 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J0K-3z-4Ao"/>
                     </view>
+                    <connections>
+                        <outlet property="mainCollectionView" destination="Yfo-W1-SwT" id="xb6-F5-0YT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="acc-HQ-tXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,7 +222,6 @@
         <!--Circle Animation View Controller-->
         <scene sceneID="zDJ-nD-HB0">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0t-A8-ufV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="NpU-Ka-tdB" customClass="CircleAnimationViewController" customModule="AnimationTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="skq-wX-uoL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -224,6 +230,7 @@
                         <viewLayoutGuide key="safeArea" id="ivv-Nf-ALs"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y0t-A8-ufV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="789.35532233883066"/>
         </scene>

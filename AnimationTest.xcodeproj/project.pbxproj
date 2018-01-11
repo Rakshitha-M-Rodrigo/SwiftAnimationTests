@@ -15,6 +15,7 @@
 		ACA31411200360240084FF43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACA3140F200360240084FF43 /* LaunchScreen.storyboard */; };
 		ACA3141C200360240084FF43 /* AnimationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA3141B200360240084FF43 /* AnimationTestTests.swift */; };
 		ACA31427200360240084FF43 /* AnimationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA31426200360240084FF43 /* AnimationTestUITests.swift */; };
+		ACDFB1F220073A9E004A5EC4 /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDFB1F120073A9E004A5EC4 /* SliderViewController.swift */; };
 		ACE4BB142005E44B008739F7 /* V2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BB132005E44B008739F7 /* V2ViewController.swift */; };
 		ACE4BB182005EF63008739F7 /* table1TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE4BB162005EF63008739F7 /* table1TableViewCell.swift */; };
 		ACE4BB192005EF63008739F7 /* table1TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACE4BB172005EF63008739F7 /* table1TableViewCell.xib */; };
@@ -56,6 +57,7 @@
 		ACA31422200360240084FF43 /* AnimationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACA31426200360240084FF43 /* AnimationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationTestUITests.swift; sourceTree = "<group>"; };
 		ACA31428200360240084FF43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDFB1F120073A9E004A5EC4 /* SliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
 		ACE4BB132005E44B008739F7 /* V2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V2ViewController.swift; sourceTree = "<group>"; };
 		ACE4BB162005EF63008739F7 /* table1TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = table1TableViewCell.swift; sourceTree = "<group>"; };
 		ACE4BB172005EF63008739F7 /* table1TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = table1TableViewCell.xib; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				ACE4BB132005E44B008739F7 /* V2ViewController.swift */,
 				ACE4BB1A2005F15E008739F7 /* table1ViewController.swift */,
 				ACE4BB1C200607FC008739F7 /* CircleAnimationViewController.swift */,
+				ACDFB1F120073A9E004A5EC4 /* SliderViewController.swift */,
 			);
 			path = AnimationTest;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACDFB1F220073A9E004A5EC4 /* SliderViewController.swift in Sources */,
 				ACE4BB142005E44B008739F7 /* V2ViewController.swift in Sources */,
 				ACE4BB1B2005F15E008739F7 /* table1ViewController.swift in Sources */,
 				ACE4BB2120062BF6008739F7 /* CollectionViewCell.swift in Sources */,
