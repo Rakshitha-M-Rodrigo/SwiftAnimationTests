@@ -18,6 +18,9 @@ class SliderViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.mainCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "sliderCollectionCell")
         
+        
+        self.mainCollectionView.collectionViewLayout = UILayoutGuide( (width: self.view.frame.size.width, height: 200)
+        
     }
 
     override func didReceiveMemoryWarning() {

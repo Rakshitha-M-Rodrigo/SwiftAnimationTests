@@ -31,12 +31,14 @@
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PDG-0I-x1q">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="285"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.0" green="0.51207909539999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="PDG-0I-x1q" secondAttribute="bottom" constant="285" id="3zU-rk-4oI"/>
                                             <constraint firstItem="PDG-0I-x1q" firstAttribute="height" secondItem="Emu-fp-2Ep" secondAttribute="height" multiplier="0.5" id="B2Q-8S-6Ik"/>
+                                            <constraint firstItem="PDG-0I-x1q" firstAttribute="width" secondItem="Emu-fp-2Ep" secondAttribute="width" id="Fvm-G2-gfc"/>
                                             <constraint firstItem="PDG-0I-x1q" firstAttribute="leading" secondItem="Emu-fp-2Ep" secondAttribute="leading" id="IOY-Ul-vfH"/>
                                             <constraint firstAttribute="trailing" secondItem="PDG-0I-x1q" secondAttribute="trailing" id="NNV-gg-RFL"/>
                                             <constraint firstItem="PDG-0I-x1q" firstAttribute="top" secondItem="Emu-fp-2Ep" secondAttribute="top" id="w6F-lM-ih5"/>
