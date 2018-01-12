@@ -168,25 +168,16 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaC-d4-juX">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yfo-W1-SwT">
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yfo-W1-SwT">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="K8Y-Pu-wTB">
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="K8Y-Pu-wTB">
                                             <size key="itemSize" width="86" height="72"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="bOe-Hw-Gvy">
-                                                <rect key="frame" x="0.0" y="0.0" width="86" height="72"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="86" height="72"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </view>
-                                            </collectionViewCell>
-                                        </cells>
+                                        <cells/>
                                         <connections>
                                             <outlet property="dataSource" destination="Nfq-Ik-9ib" id="gSa-Qu-u78"/>
                                             <outlet property="delegate" destination="Nfq-Ik-9ib" id="Txc-bN-8Sl"/>
@@ -204,9 +195,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Yfo-W1-SwT" firstAttribute="width" secondItem="kDH-Rk-Zcu" secondAttribute="width" id="7yr-jC-4fb"/>
                             <constraint firstItem="BaC-d4-juX" firstAttribute="trailing" secondItem="J0K-3z-4Ao" secondAttribute="trailing" id="CQf-UG-UZW"/>
                             <constraint firstItem="BaC-d4-juX" firstAttribute="bottom" secondItem="J0K-3z-4Ao" secondAttribute="bottom" id="S10-pI-ufK"/>
                             <constraint firstItem="BaC-d4-juX" firstAttribute="top" secondItem="kDH-Rk-Zcu" secondAttribute="top" id="VsV-za-b1k"/>
+                            <constraint firstItem="Yfo-W1-SwT" firstAttribute="height" secondItem="kDH-Rk-Zcu" secondAttribute="height" id="sTh-qo-uzs"/>
                             <constraint firstItem="BaC-d4-juX" firstAttribute="leading" secondItem="J0K-3z-4Ao" secondAttribute="leading" id="tCg-rc-UKm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J0K-3z-4Ao"/>

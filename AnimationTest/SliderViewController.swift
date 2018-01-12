@@ -19,7 +19,6 @@ class SliderViewController: UIViewController {
         self.mainCollectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "sliderCollectionCell")
         
         
-        self.mainCollectionView.collectionViewLayout = UILayoutGuide( (width: self.view.frame.size.width, height: 200)
         
     }
 
@@ -39,11 +38,43 @@ extension SliderViewController: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let mainCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCollectionCell", for: indexPath) as! CollectionViewCell
+        
+        let headerView = mainCell.viewWithTag(1) as! UIView
         if (collectionView == mainCollectionView){
+            
+            let xx = indexPath.row % 3
+            switch xx {
+            case 1:
+                mainCell.backgroundColor = .orange
+//                headerView.backgroundColor = .red
+                break
+            case 2:
+                mainCell.backgroundColor = .blue
+//                headerView.backgroundColor = .blue
+                break
+            
+            default:
+                mainCell.backgroundColor = .yellow
+//                headerView.backgroundColor = .yellow
+            }
             return mainCell
         }
         return mainCell
     }
     
     
+}
+
+
+extension SliderViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if (collectionView == mainCollectionView){
+            return CGSize(width: self.mainCollectionView.frame.size.width, height: self.mainCollectionView.frame.size.height)
+        }
+        return CGSize(width: self.mainCollectionView.bounds.size.width, height: self.mainCollectionView.bounds.size.height)
+    }
+    
+
 }
