@@ -40,22 +40,23 @@ extension SliderViewController: UICollectionViewDelegate, UICollectionViewDataSo
         let mainCell = collectionView.dequeueReusableCell(withReuseIdentifier: "sliderCollectionCell", for: indexPath) as! CollectionViewCell
         
         let headerView = mainCell.viewWithTag(1) as! UIView
+        let floatButtonView = mainCell.viewWithTag(5) as! UIView
         if (collectionView == mainCollectionView){
             
             let xx = indexPath.row % 3
             switch xx {
             case 1:
                 mainCell.backgroundColor = .orange
-//                headerView.backgroundColor = .red
+                floatButtonView.backgroundColor = .orange
                 break
             case 2:
                 mainCell.backgroundColor = .blue
-//                headerView.backgroundColor = .blue
+                floatButtonView.backgroundColor = .blue
                 break
             
             default:
                 mainCell.backgroundColor = .yellow
-//                headerView.backgroundColor = .yellow
+                floatButtonView.backgroundColor = .yellow
             }
             return mainCell
         }
